@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt_1p -> restauracja</title>
+    <link rel="stylesheet" href="./style1p.css"/>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Witamy w restauracji "Wszystkie Smaki"</h1>
+        </header>
+        <div class="box">
+            <div class="chest">
+                <section>
+                    <img src="./menu.jpg" alt="Nasze danie"/>
+                </section>
+                <nav>
+                    <h4>U nas dobrze zjesz!</h4>
+                    <ol>
+                        <li>Obiady od 40zł</li>
+                        <li>Przekąski od 10zł</li>
+                        <li>Kolacje od 20zł</li>
+                    </ol>
+                </nav>
+            </div>
+            <main>
+                <h2>Zarezerwuj stolik on-line</h2>
+                <form action="./app1.php" method="post">
+                    <p>Data (format rrrr-mm-dd):</p>
+                    <input type="date" name="data">
+                    <p>Ile osób?:</p>
+                    <input type="number" name="ilosc" min="1" value="1">
+                    <p>Twój numer telefonu:</p>
+                    <input name="telefon"><br>
+                    <input id="a" type="checkbox">Zgadzam się na przetwarzanie moich danych osobowych
+                    <br>
+                    <input type="reset" id="wyczysc" value="WYCZYŚĆ"/>
+                    <button name="rezerwuj">REZERWUJ</button>
+                </form>
+            </main>
+        </div>
+        <small>
+            <span>Stronę internetową opracował: <i>PESEL</i></span>
+        </small>
+    </div>
+</body>
+</html>
